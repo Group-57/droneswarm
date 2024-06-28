@@ -1,124 +1,294 @@
 // import React from 'react';
 // import { Link } from 'react-router-dom';
-// import backim11 from './backimage.jpeg'
-// import new12 from './new12.png'
 // import Navbar from './Navbar';
-// import newback from './newback.webp'
-// import drone2 from './drones3.jpg'
-
-
+// import video from './dronevid2.mp4';
 
 // function InputNumberComponent() {
 //   return (
 //     <>
-//       <Navbar />
+//       {/* <Navbar/> */}
 //       <div
-//         className='container-fluid d-flex flex-column justify-content-center align-items-center'
+//         className="container-fluid d-flex flex-column justify-content-center align-items-center"
 //         style={{
 //           minHeight: '100vh',
-//           backgroundImage: `url(${drone2})`,
-//           backgroundSize: 'cover',
-//           backgroundPosition: 'center',
-//           color: 'white', // Text color for the title
+//           position: 'relative',
+//           overflow: 'hidden',
+//           // backgroundColor:'black'
 //         }}
 //       >
-//         <h1 className='mb-4'>YOUR OWN DRONE SHOW PLANNER</h1>
+//         {/* Full-screen video */}
+//         <video
+//           autoPlay
+//           loop
+//           muted
+//           style={{
+//             position: 'absolute',
+//             top: '50%',
+//             left: '50%',
+//             width: '100vw',
+//             height: '100vh',
+//             objectFit: 'cover',
+//             transform: 'translate(-50%, -50%)',
+//             zIndex: -1,
+//           }}
+//         >
+//           <source src={video} type="video/mp4" />
+//         </video>
 
-//         <div className='row'>
-//           <div className='col-md-6'>
-//             <button className='btn btn-primary btn-block'>
-//               <Link to='/s2' className='text-white text-decoration-none'>
-//                 Plan Swarm
-//               </Link>
-//             </button>
-//           </div>
-//           <div className='col-md-6'>
-//             <button className='btn btn-primary btn-block'>
-//               <Link to='/maps' className='text-white text-decoration-none'>
-//                 Maps
-//               </Link>
-//             </button>
-//           </div>
+//         {/* Content on top of video */}
+//         <div
+//           className="text-center"
+//           style={{
+//             position: 'relative',
+//             display: 'flex',
+//             flexDirection: 'column',
+//             alignItems: 'center',
+//             zIndex: 1,
+//             color: 'white',
+//             textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)', // Text shadow for better readability
+//           }}
+//         >
+//           <h1
+//             className="mb-4"
+//             style={{
+//               fontSize: '2rem',
+//               marginBottom: '2rem',
+//               marginLeft: '1000px',
+//               marginTop: '550px',
+              
+//               color: 'white',
+//             }}
+//           >
+//             Light Up The
+
+//           </h1>
+//           <h3
+//             className="mb-4"
+//             style={{
+//               fontSize: '3rem',
+//               // marginBottom: '2rem',
+//               marginLeft: '1000px',
+//               // marginTop: '500px',
+//               color: 'gold',
+//             }}
+//           >
+            
+//             Night Sky
+//           </h3>
+
+//           {/* Get Started button */}
+//           {/* <button
+//             style={{
+//               backgroundColor: 'blue',
+//               borderColor: '#000001',
+//               padding: '10px 15px',
+//               fontSize: '1rem',
+//               whiteSpace: 'nowrap',
+//               width: 'fit-content',
+//               display: 'flex',
+//             }}
+//           >
+//             <Link to="/s2" className="text-white text-decoration-none">
+//               Get Started 
+//               <span style={{ fontWeight: 300, fontSize: 'larger', fontStyle: 'bold' }}>
+//                 {' ->'}
+//               </span>
+//             </Link>
+//           </button> */}
 //         </div>
 //       </div>
-//     </>
-//   );
-// }
 
-// export default InputNumberComponent;
-
-// function InputNumberComponent({  }) {
-//   return (
-//     <>
-//      <Navbar/>
-//     <div className='backimage2' style={{ backgroundImage: `url(${new12})` }}>
-
-
-//      <div className='buttons1'>
-//       <button><Link to='s2'>plan Swarm</Link></button>
-//       <button ><Link to='maps'>maps</Link></button>
+//       {/* Introduction Section */}
+//       <div
+//         className="introduction-section"
+//         style={{
+//           backgroundColor: 'black',
+//           color: 'white',
+//           height: '1000px',
+//           padding: '200px 200px',
+//           textAlign: 'center',
+//         }}
+//       >
+//         <h2>Welcome to Our Show!</h2>
+//         <p>
+//           Experience the magic of drones lighting up the night sky. Our drone shows
+//           are a perfect blend of technology and artistry, creating unforgettable
+//           moments for every occasion. Whether it's a festival, wedding, or a corporate
+//           event, we bring your vision to life with dazzling aerial displays.
+//         </p>
+//         <button
+//             style={{
+//               backgroundColor: 'blue',
+//               borderColor: '#000001',
+//               padding: '10px 15px',
+//               fontSize: '1rem',
+//               marginLeft:'450px',
+//               whiteSpace: 'nowrap',
+//               width: 'fit-content',
+//               display: 'flex',
+//             }}
+//           >
+//             <Link to="/s2" className="text-white text-decoration-none">
+//               Get Started 
+//               <span style={{ fontWeight: 300, fontSize: 'larger', fontStyle: 'bold' }}>
+//                 {' ->'}
+//               </span>
+//             </Link>
+//           </button>
 //       </div>
-//     </div>
 //     </>
 //   );
 // }
 
 // export default InputNumberComponent;
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-
-// const MyComponent = ({ })  {
-//   return (
-//     <div className='backimage2' style={{ backgroundImage: `url(${newback})` }}>
 
 
-//     <div className='buttons1'>
-//       <Link to='/s2'>
-//         <button>Plan Swarm</button>
-//       </Link>
-//       <Link to='/maps'>
-//         <button>Maps</button>
-//       </Link>
-//     </div>
-//   );
-// };
+//CHATGPT
 
-// export default MyComponent;
-
-
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
-import drone2 from './drones3.jpg';
+import video from './dronevid2.mp4';
 
 function InputNumberComponent() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (videoRef.current) {
+        videoRef.current.play();
+      }
+    }, 3000); // 3000ms delay (3 seconds)
+
+    return () => clearTimeout(timer); // Cleanup timer on component unmount
+  }, []);
+
   return (
     <>
-      <Navbar />
+      {/* <Navbar/> */}
       <div
-        className='container-fluid d-flex flex-column justify-content-center align-items-center'
+        className="container-fluid d-flex flex-column justify-content-center align-items-center"
         style={{
           minHeight: '100vh',
-          backgroundImage: `url(${drone2})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          color: 'white',
-          paddingTop: '50px'
+          position: 'relative',
+          overflow: 'hidden',
+          // backgroundColor:'black'
         }}
       >
-        <h1 className='mb-4' style={{ marginTop: '-350px' }}>Light UP the Dark SKY....</h1>
-        <div className='row w-100 justify-content-center'>
-          <div className='col-md-6 text-center'>
-            <button
-              className='btn btn-primary btn-lg'
-              style={{ backgroundColor: '#007bff', borderColor: '#007bff' }}
-            >
-              <Link to='/s2' className='text-white text-decoration-none'>
-                Get Started
-              </Link>
-            </button>
-          </div>
+        {/* Full-screen video */}
+        <video
+          ref={videoRef}
+          loop
+          muted
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            width: '100vw',
+            height: '100vh',
+            objectFit: 'cover',
+            transform: 'translate(-50%, -50%)',
+            zIndex: -1,
+          }}
+        >
+          <source src={video} type="video/mp4" />
+        </video>
+
+        {/* Content on top of video */}
+        <div
+          className="text-center"
+          style={{
+            position: 'relative',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            zIndex: 1,
+            color: 'white',
+            textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)', // Text shadow for better readability
+          }}
+        >
+          <h2
+            className="mb-4"
+            style={{
+              fontSize: '2rem',
+              marginBottom: '2rem',
+              marginLeft: '1000px',
+              marginTop: '550px',
+              color: 'white',
+            }}
+          >
+            Light up the
+          </h2>
+          <h1
+            className="mb-4"
+            style={{
+              fontSize: '3rem',
+              marginLeft: '1000px',
+              color: 'gold',
+            }}
+          >
+            Night Sky
+          </h1>
+
+          {/* Get Started button */}
+          {/* <button
+            style={{
+              backgroundColor: 'blue',
+              borderColor: '#000001',
+              padding: '10px 15px',
+              fontSize: '1rem',
+              whiteSpace: 'nowrap',
+              width: 'fit-content',
+              display: 'flex',
+            }}
+          >
+            <Link to="/s2" className="text-white text-decoration-none">
+              Get Started 
+              <span style={{ fontWeight: 300, fontSize: 'larger', fontStyle: 'bold' }}>
+                {' ->'}
+              </span>
+            </Link>
+          </button> */}
         </div>
+      </div>
+
+      {/* Introduction Section */}
+      <div
+        className="introduction-section"
+        style={{
+          backgroundColor: 'black',
+          color: 'white',
+          height: '1000px',
+          padding: '200px 200px',
+          textAlign: 'center',
+        }}
+      >
+        <h2>Welcome to Our Show!</h2>
+        <p>
+          Experience the magic of drones lighting up the night sky. Our drone shows
+          are a perfect blend of technology and artistry, creating unforgettable
+          moments for every occasion. Whether it's a festival, wedding, or a corporate
+          event, we bring your vision to life with dazzling aerial displays.
+        </p>
+        <button
+          style={{
+            backgroundColor: 'blue',
+            borderColor: '#000001',
+            padding: '10px 15px',
+            fontSize: '1rem',
+            marginLeft: '450px',
+            whiteSpace: 'nowrap',
+            width: 'fit-content',
+            display: 'flex',
+          }}
+        >
+          <Link to="/s2" className="text-white text-decoration-none">
+            Get Started 
+            <span style={{ fontWeight: 300, fontSize: 'larger', fontStyle: 'bold' }}>
+              {' ->'}
+            </span>
+          </Link>
+        </button>
       </div>
     </>
   );
