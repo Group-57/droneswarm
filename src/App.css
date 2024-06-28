@@ -38,8 +38,8 @@
 }
 
 nav {
-  background-color: rgb(60, 9, 198);
-  color: #fff;
+  /* background-color: rgb(60, 9, 198); */
+  color: #020000;
   height: 50px;
   justify-content: flex-end;
   align-items: center;
@@ -58,15 +58,80 @@ nav li {
 }
 
 nav a {
-  color: #fff;
+  color: #000000;
   text-decoration: dashed;
 }
 
 nav a:hover {
-  color: #ccc;
+  color: #000000;
 }
 
+/* CHATGPT */
+
+/* App.css */
+/* 
 .total {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.map-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    overflow-y: auto;
+    max-height: 30vh;
+}
+
+.formation-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    max-height: 200px;
+    width: 100%;
+}
+
+.formationButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.marker-number {
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+label {
+    margin-top: 5px;
+} */
+
+
+/* CHATGPT */
+
+.total {
+  background-color: rgb(0,0,0);
   display: flex;
     justify-content: space-between;
 }
@@ -75,12 +140,13 @@ nav a:hover {
   flex: 0.9;  
   border: 3px;
   height: 1000px;
-  margin-top: 10px;
+  margin-top: 50px;
 
 }
 .head1{
   margin-left: 270px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #ffffff;
 
   
 }
@@ -98,6 +164,8 @@ nav a:hover {
   background-position: center;
   height: 100vh; /* 100% of the viewport height */
   width: 100vw;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* Add space between input boxes */
@@ -113,7 +181,8 @@ button {
   margin-bottom: 15px;  /* Adjust as needed */
   display: block;  /* Makes the button take its own line */
   height: auto;
-  background-color: orange;
+  /* background-color: rgb(241, 161, 0); */
+  background-color: gold;
 }
 
 /* Add space above the drones container (if you need) */
@@ -158,65 +227,4 @@ div.drone-container {
 div.buttons1 {
   margin-left: 45%; /* Set the desired margin */
 
-}
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.background-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  background-size: cover;
-  transition: 1s opacity;
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  color: white;
-  text-align: center;
-}
-
-.content h1 {
-  margin-top: -50px; /* Adjust this to move the text higher */
-}
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.background-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -50%);
-  pointer-events: none; /* This makes the iframe non-interactive */
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  color: white;
-  text-align: center;
-}
-
-.content h1 {
-  margin-top: -50px; /* Adjust this to move the text higher */
-}
-.youtube-background iframe {
-  pointer-events: none;
 }
